@@ -15,8 +15,8 @@ public class BookController {
     private IBookService bookService;
 
     @GetMapping(value = "/welcome")
-    public void welcome() {
-        System.out.println("Welcome");
+    public String welcome() {
+        return "Welcome";
     }
 
     /**
