@@ -14,6 +14,11 @@ public class BookController {
     @Autowired
     private IBookService bookService;
 
+    @GetMapping(value = "/welcome")
+    public void welcome() {
+        System.out.println("Welcome");
+    }
+
     /**
      * Questo metodo restituisce tutti i libri
      *
