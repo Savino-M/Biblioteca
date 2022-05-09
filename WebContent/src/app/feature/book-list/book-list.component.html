@@ -1,0 +1,13 @@
+<div id="booklist" class="col-md-12">
+
+    <div class="mt-4 mb-5 p-2">
+        <h2 class="text-center">All Books</h2>
+        <p class="text-center">Here are the digital books collected from online stores. You can search for them, observe them and book them.. </p>
+    </div>
+
+    <button *ngIf="role=='admin'" class="btn btn-primary" (click)="changeReveal()">Hide/Show</button>
+    <app-add-book  *ngIf="revealForm"></app-add-book>
+    
+    <app-table-book [books]="books"></app-table-book>
+    
+</div>

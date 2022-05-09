@@ -1,0 +1,72 @@
+<!-- Form di registrazione -->
+    <div class="container py-5 h-100" id="background">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center">
+
+                        <div class="mb-md-5 mt-md-4 pb-5" id="form registrazione">
+
+                            <h2 class="fw-bold mb-2 text-uppercase">Registrati</h2>
+                            <p class="text-white-50 mb-5">Compila tutti i dati</p>
+
+                            <form>
+                                <!-- Nome -->
+                                <div class="form-outline form-white mb-4">
+                                    <label class="form-label" for="nome">Nome</label>
+                                    <input class="form-control" id="nome" required type="text" #name />
+                                </div>
+
+                                <!-- Cognome -->
+                                <div class="form-outline form-white mb-4">
+                                    <label class="form-label" for="cognome">Cognome</label>
+                                    <input class="form-control" id="cognome" required type="text" #surname />
+                                </div>
+
+                                <!-- CF -->
+                                <div class="form-outline form-white mb-4">
+                                    <label class="form-label" for="CF">Codice Fiscale</label>
+                                    <input type="text" class="form-control" id="CF" required #cf />
+                                </div>
+
+                                <!-- Indirizzo -->
+                                <div class="form-outline form-white mb-4">
+                                    <label class="form-label" for="indirizzo">Indirizzo di residenza</label>
+                                    <input type="text" class="form-control" id="indirizzo" required #address />
+                                </div>
+
+                                <!-- Cap -->
+                                <div class="form-outline form-white mb-4">
+                                    <label class="form-label" for="cap">Cap</label>
+                                    <input type="text" class="form-control" id="cap" required #cap/>
+                                </div>
+
+                                <!-- Città -->
+                                <div class="form-outline form-white mb-4">
+                                    <label class="form-label" for="citta">Città</label>
+                                    <input class="form-control" id="citta" type="text" required #city/>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="form-outline form-white mb-4">
+                                    <label class="form-label" for="email">Email</label>
+                                    <input class="form-control form-control-lg" id="email" require type="email" #email/>
+                                </div>
+
+                                <!-- Password -->
+                                <div class="form-outline form-white mb-4">
+                                    <label class="form-label" for="password">Password</label>
+                                    <input class="form-control form-control-lg" id="password" required type="password" #password/>
+                                </div>
+
+                                <!-- Bottoni -->
+                                <button class="btn btn-outline-light btn-lg px-5" type="button" (click)="addUser(name.value, surname.value, cf.value, address.value, cap.value, city.value, email.value, password.value)">Registrati</button>
+                                <button class="btn btn-outline-light btn-lg px-5" type="reset">Annulla</button>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

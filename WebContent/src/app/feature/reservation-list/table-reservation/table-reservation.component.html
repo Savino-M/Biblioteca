@@ -1,0 +1,36 @@
+<table class="table">
+
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Cognome</th>
+        <th scope="col">Isbn</th>
+        <th scope="col">Titolo</th>
+        <th scope="col">Stato</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let reservation of reservations">
+
+        <th scope="row">{{reservation.reservation.id}}</th>
+        <td>{{reservation.user.name}}</td>
+        <td>{{reservation.user.surname}}</td>
+        <td>{{reservation.book.isbn}}</td>
+        <td>{{reservation.book.title}}</td>
+        <td>{{reservation.reservation.state}}</td>
+
+        <td *ngIf="role=='admin' && reservation.reservation.state=='WORKING_IN_PROGRESS'">
+          <button class="btn btn-primary" type="button" (click)="acceptReservation(reservation.reservation.id)">Accetta prenotazione</button>
+        </td>
+
+        <td *ngIf="reservation.reservation.state=='WORKING_IN_PROGRESS'">
+          <button class="btn btn-primary" type="button" (click)="cancelReservation(reservation.reservation.id)">Annulla prenotazione</button>
+        </td>
+        
+
+      </tr>
+    </tbody>
+
+  </table>
