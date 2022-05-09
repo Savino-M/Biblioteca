@@ -13,11 +13,6 @@ public class BookController {
     @Autowired
     private IBookService bookService;
 
-    @GetMapping(value = "/welcome")
-    public String welcome() {
-        return "Welcome";
-    }
-
     /**
      * Questo metodo restituisce tutti i libri
      *
