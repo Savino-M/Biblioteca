@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Address } from './address';
 import { User } from './user';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -14,7 +15,7 @@ export class RegisterComponent implements OnInit {
   address!:Address;
   accepted: any=false;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -30,7 +31,7 @@ export class RegisterComponent implements OnInit {
         this.accepted=res.valueOf();
         
         if(this.accepted){
-          window.location.href="/login";
+          this.router.navigate(['/login']);
         }
       },
       (error) => console.error(error), //error
