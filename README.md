@@ -10,4 +10,4 @@ Successivamente, una volta verificato che il backend funzioni in locale, lo si p
 
 Poi si può passare al frontend, dove basta cambiare gli URL delle richieste HTTP, mettendo invece che "localhost:8080", l'URL del backend caricato su Heroku.
 
-N.B: per quanto il backend sia completo di tutte le funzionalità, solo alcune di queste vengono effettivamente usate dal frontend.
+N.B: per quanto il backend sia completo di tutte le funzionalità, solo alcune di queste vengono effettivamente usate dal frontend. Inoltre, le funzionalità sono ulteriormente limitate per gli utenti che non hanno privilegi di amministratore. In quanto solo questi ultimi possono aggiungere libri o dare l'ok per una prenotazione.
