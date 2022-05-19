@@ -8,4 +8,6 @@ L'app ha il solo scopo di aiutare ad entrare nell'ottica dello sviluppo cloud in
 Si consiglia di eseguire l'applicazione prima in locale, andando a cambiare il file application.properties, e settando i parametri in modo da connettersi a un db localize(es H2).
 Successivamente, una volta verificato che il backend funzioni in locale, lo si può caricare su Heroku, cambiando però l'application properties per connettersi a un db remoto.
 
-Poi si può passare al frontned, dove basta cambiare gli URL delle richieste HTTP, mettendo invece che "localhost:8080", l'URL del backend caricato su Heroku.
+Poi si può passare al frontend, dove basta cambiare gli URL delle richieste HTTP, mettendo invece che "localhost:8080", l'URL del backend caricato su Heroku.
+
+N.B: per quanto il backend sia completo di tutte le funzionalità, solo alcune di queste vengono effettivamente usate dal frontend.
