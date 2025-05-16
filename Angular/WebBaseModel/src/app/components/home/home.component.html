@@ -1,0 +1,11 @@
+<div class="row" style="padding-left: 2%; max-width: fit-content;">
+  <div *ngFor="let element of elementsList" class="card" style="width: 18rem;">
+    <img src="{{element.copertina.path}}" class="figure-img img-fluid rounded" alt="">
+    <div class="card-body">
+      <h5 class="card-title">{{element.descrizione}}</h5>
+      <p class="card-text"></p>
+      <a (click)="visualizzaImmagini(element.id)" class="btn btn-primary">Visualizza</a>
+      <a (click)="prenotaElemento(element.id)" class="btn btn-primary">Prenota</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+{
+    "properties": [
+        {
+            "name": "images.path",
+            "type": "java.lang.String",
+            "description": "A description for 'images.path'"
+        },
+        {
+            "name": "encryption.key",
+            "type": "java.lang.String",
+            "description": "A description for 'encryption.key'"
+        },
+        {
+            "name": "jwt.token.expiration",
+            "type": "java.lang.String",
+            "description": "A description for 'jwt.token.expiration'"
+        },
+        {
+            "name": "jwt.secret",
+            "type": "java.lang.String",
+            "description": "A description for 'jwt.secret'"
+        },
+        {
+            "name": "database.password",
+            "type": "java.lang.String",
+            "description": "A description for 'database.password'"
+        },
+        {
+            "name": "database.username",
+            "type": "java.lang.String",
+            "description": "A description for 'database.username'"
+        },
+        {
+            "name": "database.dbname",
+            "type": "java.lang.String",
+            "description": "A description for 'database.dbname'"
+        },
+        {
+            "name": "database.cluster",
+            "type": "java.lang.String",
+            "description": "A description for 'database.cluster'"
+        }
+    ]
+}
