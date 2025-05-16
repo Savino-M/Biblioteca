@@ -1,0 +1,7 @@
+<div *ngIf="this.window.getShow()" class="modal">
+    <div class="modal-content">
+        <span class="close" (click)="closeWindow()">&times;</span>
+        <p>{{ this.window.getMessage() }}</p>
+        <button class="buttonClose" (click)="closeWindow()">Chiudi</button>
+    </div>
+</div>

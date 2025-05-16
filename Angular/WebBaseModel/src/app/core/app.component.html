@@ -1,0 +1,14 @@
+<div>
+
+  <app-header *ngIf="showHeader"></app-header>
+  <br><br><br><br>
+
+  <!-- in base al link in cui mi trovo, viene caricato un certo componente. Ad es., se sono in book, mi carica il componente book -->
+  <router-outlet></router-outlet>
+
+  <app-footer></app-footer>
+
+  <app-loader></app-loader>
+  <app-message-window></app-message-window>
+
+</div>

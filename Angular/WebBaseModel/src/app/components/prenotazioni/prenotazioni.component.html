@@ -1,0 +1,11 @@
+<div class="row" style="padding-left: 2%; max-width: fit-content;">
+    <div *ngFor="let prenotazione of prenotazioniList" class="card" style="width: 18rem;">
+      <img src="{{prenotazione.elemento.copertina.url}}" class="figure-img img-fluid rounded" alt="">
+      <div class="card-body">
+        <h5 class="card-title">{{prenotazione.elemento.descrizione}}</h5>
+        <p class="card-text"></p>
+        <a href="#" class="btn btn-primary">Visualizza</a>
+        <a (click)="eliminaPrenotazione(prenotazione.id)" class="btn btn-primary">Annulla prenotazione</a>
+      </div>
+    </div>
+</div>

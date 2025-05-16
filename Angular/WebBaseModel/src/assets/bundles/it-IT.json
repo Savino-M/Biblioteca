@@ -1,0 +1,11 @@
+{
+    "title": "WebBaseModel",
+    "labels": {
+        "headerInformation": {
+            "test": "TEST Header"
+        },
+        "footerInformation": {
+            "test": "TEST Footer"
+        }
+    }
+}
